@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const textToCopy = urlParams.get("text");
+    
     const messageElement = document.getElementById("message");
     const copyButton = document.getElementById("copyButton");
-    const textToCopy = "Text to copy"; // Replace with the text you want to copy
 
     const copyTextToClipboard = (text) => {
         return navigator.clipboard.writeText(text);
