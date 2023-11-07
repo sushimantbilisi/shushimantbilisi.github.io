@@ -6,33 +6,40 @@ document.addEventListener("DOMContentLoaded", function () {
         copyTextToClipboard2(textToCopy);
     }
 
-    function copyTextToClipboard2(text) {
-        navigator.clipboard.writeText(text)
-        .then(() => {
-            console.log('Text copied to clipboard: ' + text);
-        })
-        .catch((err) => {
-            console.error('Unable to copy text: ', err);
-        });
-    }
-    
     function copyTextToClipboard(text) {
         var textArea = document.createElement("textarea");
         textArea.value = text;
         
         document.body.appendChild(textArea);
         textArea.select();
-        document.execCommand('copy');
-        document.body.removeChild(textArea);
+        setTimeout(() => {
+            document.execCommand('copy');
+            console.log(1+ text);
+        }, 500);
+        console.log(2+ text);
+        //document.body.removeChild(textArea);
 
-        displayCopyMessage();
+        //displayCopyMessage();
     }
 
-    function displayCopyMessage() {
+    function copyTextToClipboard2(text) {
+        navigator.clipboard.writeText(text)
+        .then(() => {
+            displayCopyMessage('Text copied to clipboard: ');
+            console.log('Text copied to clipboard: ' + text);
+        })
+        .catch((err) => {
+            console.error('Unable to copy text: ', err);
+            displayCopyMessage('Unable to copy text: ');
+        });
+    }
+
+    function displayCopyMessage(text) {
         const messageElement = document.getElementById("message");
         messageElement.style.display = "block";
         setTimeout(() => {
             messageElement.style.display = "none";
         }, 2000); // Display the message for 2 seconds
     }
+
 });
