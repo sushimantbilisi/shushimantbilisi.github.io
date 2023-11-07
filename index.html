@@ -1,31 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    // Get the URL parameters
-    const urlParams = new URLSearchParams(window.location.search);
-    const textToCopy = urlParams.get("text");
-
-    if (textToCopy) {
-        // Copy the text to the clipboard
-        copyTextToClipboard(textToCopy);
-    }
-    
-    function copyTextToClipboard(text) {
-        var textArea = document.createElement("textarea");
-        textArea.value = text;
-        
-        document.body.appendChild(textArea);
-        textArea.select();
-        document.execCommand('copy');
-        document.body.removeChild(textArea);
-        
-        alert("Text copied to clipboard: " + text);
-    }
-});
-</script>
 </head>
 <body>
+    <div id="message" style="display: none;">Text copied to clipboard!</div>
+    <script src="script.js"></script>
 </body>
 </html>
