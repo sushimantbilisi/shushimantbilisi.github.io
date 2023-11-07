@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     const urlParams = new URLSearchParams(window.location.search);
     const textToCopy = urlParams.get("text");
-    
-    const messageElement = document.getElementById("message");
+
+    const messageElement = document.getElementById("copyMessage");
     const copyButton = document.getElementById("copyButton");
+
 
     const copyTextToClipboard = (text) => {
         return navigator.clipboard.writeText(text);
@@ -21,7 +22,4 @@ document.addEventListener("DOMContentLoaded", () => {
                 console.error('Unable to copy text: ', err);
             });
     });
-
-    // Programmatically trigger a click event on the button
-    copyButton.click();
 });
