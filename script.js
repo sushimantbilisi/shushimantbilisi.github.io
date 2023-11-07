@@ -3,9 +3,19 @@ document.addEventListener("DOMContentLoaded", function () {
     const textToCopy = urlParams.get("text");
 
     if (textToCopy) {
-        copyTextToClipboard(textToCopy);
+        copyTextToClipboard2(textToCopy);
     }
 
+    function copyTextToClipboard2(text) {
+        navigator.clipboard.writeText(text)
+        .then(() => {
+            console.log('Text copied to clipboard: ' + text);
+        })
+        .catch((err) => {
+            console.error('Unable to copy text: ', err);
+        });
+    }
+    
     function copyTextToClipboard(text) {
         var textArea = document.createElement("textarea");
         textArea.value = text;
