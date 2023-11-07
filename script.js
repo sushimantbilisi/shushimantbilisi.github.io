@@ -22,4 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 console.error('Unable to copy text: ', err);
             });
     });
+
+    copyButton.click();
 });
