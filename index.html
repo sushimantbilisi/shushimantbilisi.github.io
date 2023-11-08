@@ -1,18 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Maundy - Bootstrap Coming Soon Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 </head>
+
 <body>
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-6 offset-3">
-                <button class="btn btn-primary" id="copyButton">Copy Text</button>
-                <div class="alert alert-success mt-3" id="copyMessage" style="display: none;">Text copied to clipboard!</div>
+
+    <div>
+        <header class="header navbar navbar-expand-lg bg-light shadow-sm fixed-top" style="">
+            <div class="container px-3">
+              <span href="javascript:;" class="navbar-brand pe-3 boombuli-logo">
+                <img src="assets/img/logo/boombuli_yoga_logo.png" width="47" alt="Silicon">
+                <span style="font-weight:450">BOOMBULI YOGA</span>
+              </span>
+
+              <a href="https://b579198.alteg.io/" class="btn btn-md fs-sm rounded-pill book-now-btn" target="_blank">
+                <i class="bx bx-cart fs-5 lh-1 me-1"></i>
+                Записаться
+              </a>
             </div>
+        </header>
+
+        <main id="main">
+
+            <section id="about" class="about">
+                <div class="container">
+
+                    <div class="d-grid gap-2">
+                    
+                        <div class="alert alert-success mt-3" id="copyMessage" style="display: none;">
+                            <i class="bi bi-check-circle"></i>
+                            <span>Счет скопирован!</span>
+                        </div>
+                
+
+                        <div class="icon-box">
+                            <h2 class="title">Чтобы скопировать номер счета кликните на кнопку</h2>
+                        </div>
+
+                        <h5 class="text-center">TBC - Bank</h5>
+                        <button type="button" class="btn btn-lg rounded-pill text-start boombuli-btn-labeled tbc-btn" id="tbc-btn">
+                            <span class="btn-label rounded-pill">
+                                <i class="bi bi-copy"></i>
+                            </span>
+                            <span>GE27TB7924345064400003</span>
+                        </button>
+                        <p class="text-center service-fee">В комментариях напишите: 
+                            <span style="color: #9fc517;">"Service Fee"</span>
+                        </p>
+
+
+                        <h5 class="text-center">Bank of Georgia</h5>
+                        <button type="button" class="btn btn-lg rounded-pill text-start boombuli-btn-labeled bog-btn" id="bog-btn">
+                            <span class="btn-label rounded-pill">
+                                <i class="bi bi-copy"></i>
+                            </span>
+                            <span>GE68BG0000000533443714</span>
+                        </button>
+
+                    </div>
+                    
+
+                    <div class="social-links text-center">
+                        <a href="https://www.instagram.com/boombuli.yoga" class="instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.facebook.com/boombuliyoga/" class="facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.tiktok.com/@boombuli.yoga" class="linkedin"><i class="bi bi-tiktok"></i></a>
+                        <a href="https://www.youtube.com/channel/UC-ORqBip1JG405qZiZGpBLw" class="twitter"><i class="bi bi-youtube"></i></a>
+                    </div>
+
+                </div>
+            </section>
+
+        </main><!-- End #main -->
+
+      <!-- ======= Footer ======= -->
+      <footer id="footer">
+        <div class="container">
+          <div class="copyright">
+            &copy; Copyright <strong><span>Boombuli Yoga</span></strong>. All Rights Reserved
+          </div>
         </div>
+      </footer><!-- End #footer -->
+
+      <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+      <!-- Vendor JS Files -->
+      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/vendor/php-email-form/validate.js"></script>
+
+      <!-- Template Main JS File -->
+      <script src="assets/js/script.js" type="module"></script>
     </div>
-    
-    <script src="script.js" type="module"></script>
+
 </body>
+
 </html>
