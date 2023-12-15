@@ -111,7 +111,7 @@ h6 {
 #main h2 {
   color: #eee;
   margin-bottom: 40px;
-  font-size: 22px;
+  font-size: 1.25rem;
 }
 
 #main .countdown {
@@ -791,6 +791,8 @@ section {
 .boombuli-btn-labeled {
   padding-top: 0;
   padding-bottom: 0;
+  margin: 0 20px;
+  font-size: 17px;
 }
 
 .boombuli-btn-labeled .btn {

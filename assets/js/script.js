@@ -8,12 +8,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const TBC_BUTTON = document.getElementById("tbc-btn");
     const BOG_BUTTON = document.getElementById("bog-btn");
     const SERVICE_FEE = document.getElementById("service-fee");
+    const RECEIVER = document.getElementById("boombuli-receiver");
 
     
     const tbc_account = "GE27TB7924345064400003";
     const bog_account = "GE68BG0000000533443714";
-
-
+    const service_fee = "Service Fee";
+    const receiver = "Tsypysheva Aleksandra";
     
     const copyTextToClipboard = (text) => {
         navigator.clipboard.writeText(text)
@@ -40,7 +41,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     SERVICE_FEE.addEventListener("click", () => {
         ALERT_INNER_TEXT.innerText = "Текст скопирован!";
-        copyTextToClipboard(bog_account);
+        copyTextToClipboard(service_fee);
+    });
+
+    RECEIVER.addEventListener("click", () => {
+        ALERT_INNER_TEXT.innerText = "Получатель скопирован!";
+        copyTextToClipboard(receiver);
     });
 
 });
