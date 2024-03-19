@@ -802,11 +802,11 @@ body, html {
     margin-bottom: 10px;
   }
   .book-now-btn{
-    background-color: #9fc517;
+    background-color: #fc2418d6;
     color: white;
   }
   .book-now-btn:hover{
-    background-color: #8cae12;
+    background-color: #fc2418;
     color: white;
   }
   .service-fee{
