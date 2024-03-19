@@ -14,10 +14,8 @@ body, html {
   }
   body {
     font-family: "Open Sans", sans-serif;
-    color: #fff;
-    background: url("../img/bg.jpg") top center no-repeat;
-    background-position: left;
-    background-size: cover;
+    background-color: rgb(249, 250, 252) !important;
+    color: black !important;
     position: relative;
   }
   
