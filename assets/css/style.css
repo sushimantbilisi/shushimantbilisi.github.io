@@ -270,8 +270,15 @@ body, html {
   
   #main .social-links a:hover,
   .container .social-links a:hover {
-    background: #24b7a4;
-    border-color: #24b7a4;
+    background: rgb(252, 35, 24);
+    border-color: rgb(252, 35, 24);
+  }
+
+  .social-links .tripadvisor{
+    background-image: url(assets/img/tripadvisor.png);
+    background-size: 29px;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   
   /*--------------------------------------------------------------
