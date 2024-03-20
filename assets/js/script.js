@@ -11,10 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const RECEIVER = document.getElementById("boombuli-receiver");
 
     
-    const tbc_account = "GE27TB7924345064400003";
-    const bog_account = "GE68BG0000000533443714";
+    const tbc_account = "GE10TB7161436010100039";
+    const bog_account = "GE38BG0000000537881034";
     const service_fee = "Service Fee";
-    const receiver = "Tsypysheva Aleksandra";
+    const receiver = "Nikolaiev Dmytro";
     
     const copyTextToClipboard = (text) => {
         navigator.clipboard.writeText(text)
@@ -30,22 +30,22 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     TBC_BUTTON.addEventListener("click", () => {
-        ALERT_INNER_TEXT.innerText = "Счет скопирован!";
+        ALERT_INNER_TEXT.innerText = "iBan Copied!";
         copyTextToClipboard(tbc_account);
     });
 
     BOG_BUTTON.addEventListener("click", () => {
-        ALERT_INNER_TEXT.innerText = "Счет скопирован!";
+        ALERT_INNER_TEXT.innerText = "iBan Copied!";
         copyTextToClipboard(bog_account);
     });
 
     SERVICE_FEE.addEventListener("click", () => {
-        ALERT_INNER_TEXT.innerText = "Текст скопирован!";
+        ALERT_INNER_TEXT.innerText = "Text Copied!";
         copyTextToClipboard(service_fee);
     });
 
     RECEIVER.addEventListener("click", () => {
-        ALERT_INNER_TEXT.innerText = "Получатель скопирован!";
+        ALERT_INNER_TEXT.innerText = "Receiver Copied!";
         copyTextToClipboard(receiver);
     });
 

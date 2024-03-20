@@ -250,23 +250,22 @@ body, html {
   
   #main .social-links,
   .container .social-links {
-    margin-top: 40px;
+    margin-top: 150px;
   }
   
   #main .social-links a,
   .container .social-links a {
     font-size: 16px;
-    color: #fff;
+    color: black;
     margin: 0 3px;
     border-radius: 50%;
     width: 48px;
     height: 48px;
     transition: 0.3s;
-    border: 1px solid rgba(255, 255, 255, 0.5);
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: rgba(38, 55, 69, 0.2);
+    background-color: rgb(239, 239, 239);
   }
   
   #main .social-links a i,
@@ -757,7 +756,7 @@ body, html {
   #footer {
     background: rgba(38, 55, 69, 0.4);
     padding: 30px 0;
-    color: #fff;
+    color: #000;
     font-size: 14px;
     position: relative;
   }
