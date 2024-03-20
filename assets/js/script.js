@@ -7,13 +7,13 @@ document.addEventListener("DOMContentLoaded", () => {
     
     const TBC_BUTTON = document.getElementById("tbc-btn");
     const BOG_BUTTON = document.getElementById("bog-btn");
-    const SERVICE_FEE = document.getElementById("service-fee");
+    //const SERVICE_FEE = document.getElementById("service-fee");
     const RECEIVER = document.getElementById("boombuli-receiver");
 
     
     const tbc_account = "GE10TB7161436010100039";
     const bog_account = "GE38BG0000000537881034";
-    const service_fee = "Service Fee";
+    //const service_fee = "Service Fee";
     const receiver = "Nikolaiev Dmytro";
     
     const copyTextToClipboard = (text) => {
@@ -39,10 +39,10 @@ document.addEventListener("DOMContentLoaded", () => {
         copyTextToClipboard(bog_account);
     });
 
-    SERVICE_FEE.addEventListener("click", () => {
-        ALERT_INNER_TEXT.innerText = "Text Copied!";
-        copyTextToClipboard(service_fee);
-    });
+    // SERVICE_FEE.addEventListener("click", () => {
+    //     ALERT_INNER_TEXT.innerText = "Text Copied!";
+    //     copyTextToClipboard(service_fee);
+    // });
 
     RECEIVER.addEventListener("click", () => {
         ALERT_INNER_TEXT.innerText = "Receiver Copied!";
