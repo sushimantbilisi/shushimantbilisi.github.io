@@ -248,11 +248,6 @@ body, html {
     }
   }
   
-  #main .social-links,
-  .container .social-links {
-    margin-top: 50px;
-  }
-  
   #main .social-links a,
   .container .social-links a {
     font-size: 16px;
