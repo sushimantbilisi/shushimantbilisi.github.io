@@ -791,7 +791,6 @@ body, html {
   .boombuli-btn-labeled {
     padding-top: 0;
     padding-bottom: 0;
-    margin: 0 20px;
     font-size: 17px;
   }
   
@@ -817,6 +816,7 @@ body, html {
   }
   .tbc-btn:hover{
     background: rgb(0 176 240);
+    color: #ffffff;
   }
   .tbc-btn .btn-label{
     /* background: url('../img/logo/tbc.png') top center no-repeat; */
@@ -829,8 +829,35 @@ body, html {
   }
   .bog-btn:hover{
     background: rgb(255 96 10);
+    color: #ffffff;
   }
   .bog-btn .btn-label{
+    /* background: url('https://w7.pngwing.com/pngs/911/456/png-transparent-computer-icons-business-others-blue-angle-leaf-thumbnail.png') top center no-repeat; */
+  }
+  .mono-btn{
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background: rgb(30 31 36 / 80%);
+    color: #ffffff;
+  }
+  .mono-btn:hover{
+    background: rgb(30 31 36 / 90%);
+    color: #ffffff;
+  }
+  .mono-btn .btn-label{
+    /* background: url('https://w7.pngwing.com/pngs/911/456/png-transparent-computer-icons-business-others-blue-angle-leaf-thumbnail.png') top center no-repeat; */
+  }
+  .usdt-btn{
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background: rgb(38 161 123 / 90%);
+    color: #ffffff;
+  }
+  .usdt-btn:hover{
+    background: rgb(38 161 123);
+    color: #ffffff;
+  }
+  .usdt-btn .btn-label{
     /* background: url('https://w7.pngwing.com/pngs/911/456/png-transparent-computer-icons-business-others-blue-angle-leaf-thumbnail.png') top center no-repeat; */
   }
   div.copy-alert{
