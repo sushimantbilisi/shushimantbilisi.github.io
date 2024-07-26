@@ -25,6 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const isInstagramBrowser = navigator.userAgent.includes("Instagram");
 
+    document.getElementsByClassName("alert-danger").innerText = navigator.userAgent;
+
     const openApp = (scheme_url) => {
         if(scheme_url){
             setTimeout(() => {
