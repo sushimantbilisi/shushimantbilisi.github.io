@@ -21,8 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const usdt_account = "TBkBrw6DvrY3rNLP7RMBexr2puyjYFh6qm";
     //const service_fee = "Service Fee";
     const receiver = "Nikolaiev Dmytro";
-    
     const monobank_url = "https://send.monobank.ua/5qf1cqTUnn";
+
+    const isInstagramBrowser = navigator.userAgent.includes("Instagram");
 
     const openApp = (scheme_url) => {
         if(scheme_url){
@@ -30,7 +31,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 if(monobank_account === "5375411506909212"){
                     window.open(scheme_url, '_blank');
                 } else {
-                    window.location.href = scheme_url;
+                    if(!isInstagramBrowser){
+                        window.location.href = scheme_url;
+                    }
                 }
             }, 500);
         }
