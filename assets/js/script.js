@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const bog_scheme_url = "bogmBank://";
 
     const tbc_account = "GE10TB7161436010100039";
-    const bog_account = "GE38BG0000000537881034";
+    const bog_account = "GE03BG0000000538080611";
     const monobank_account = "5375411506909212";
     const usdt_account = "TBkBrw6DvrY3rNLP7RMBexr2puyjYFh6qm";
     //const service_fee = "Service Fee";
