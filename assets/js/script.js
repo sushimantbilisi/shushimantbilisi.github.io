@@ -25,12 +25,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const isInstagramBrowser = navigator.userAgent.includes("Instagram");
 
-    document.querySelector('.sushler').innerText = isInstagramBrowser;
-
     const openApp = (scheme_url) => {
         if(scheme_url){
             setTimeout(() => {
-                if(monobank_account === "5375411506909212"){
+                if(monobank_url === scheme_url){
                     window.open(scheme_url, '_blank');
                 } else {
                     if(!isInstagramBrowser){
